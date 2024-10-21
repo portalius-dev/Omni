@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Omni Browser for android!</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&amp;display=swap" rel="stylesheet"> 
+  <style>
+        :root {
+            --md-sys-color-primary: #D0BCFF;
+            --md-sys-color-on-primary: #381E72;
+            --md-sys-color-primary-container: #4F378B;
+            --md-sys-color-on-primary-container: #EADDFF;
+            --md-sys-color-secondary: #CCC2DC;
+            --md-sys-color-on-secondary: #332D41;
+            --md-sys-color-surface: #1C1B1F;
+            --md-sys-color-on-surface: #E6E1E5;
+            --md-sys-color-surface-variant: #49454F;
+            --md-sys-color-on-surface-variant: #CAC4D0;
+        }
+
+        body {
+            font-family: 'Product Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--md-sys-color-surface);
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .header {
+            background-color: var(--md-sys-color-surface-variant);
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--md-sys-color-primary);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 16px;
+        }
+
+        .nav-item {
+            color: var(--md-sys-color-on-surface-variant);
+            text-decoration: none;
+            padding: 8px 16px;
+            margin: 0 8px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-item:hover {
+            background-color: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .hero {
+            background-color: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            padding: 48px 24px;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        .cta-button {
+            background-color: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            padding: 12px 24px;
+            border: none;
+            border-radius: 24px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: 'Product Sans', Arial, sans-serif;
+        }
+
+        .cta-button:hover {
+            background-color: var(--md-sys-color-secondary);
+            color: var(--md-sys-color-on-secondary);
+        }
+
+        .feature {
+            background-color: var(--md-sys-color-surface-variant);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .feature h2 {
+            color: var(--md-sys-color-primary);
+            margin-top: 0;
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list li::before {
+            content: "•";
+            color: var(--md-sys-color-primary);
+            font-size: 24px;
+            margin-right: 8px;
+        }
+
+        .footer {
+            background-color: var(--md-sys-color-surface-variant);
+            color: var(--md-sys-color-on-surface-variant);
+            text-align: center;
+            padding: 16px;
+            margin-top: 24px;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <header class="header"> 
+   <div class="logo">
+    Omni Browser
+   </div> 
+  </header> 
+  <main class="content"> 
+   <section class="hero"> 
+    <h1>Omni - browser for android.</h1> 
+    <p>Open Source android browser, for everyone!</p> 
+    <a href="repo.html"><button class="cta-button">Download Now</button> </a>
+    <br>
+    <br>
+    <button class="cta-button">Source Code :)</button>
+   </section> 
+   <section class="feature"> 
+    <h2>What can i do?</h2> 
+    <ul class="feature-list"> 
+     <li>Viewing web pages.</li> 
+     <li>Saving web pages.</li> 
+     <li>Open local html files.</li> 
+     <li>Viewing and managing web history. (he-he)</li> 
+     <li>IM OPEN SOURCE BRO</li> 
+    </ul> 
+   </section> 
+   <section class="feature"> 
+    <h2>I wanna say...</h2> 
+    <p>This is my first project, guys... And it’s open to all of you (if anyone actually learns about it) so you can help me master the vast realms of Java and HTML development! Thanks if you’re helping!</p> 
+    <p>- prtls (creator)</p> 
+   </section> 
+  </main> 
+  <footer class="footer"> 
+   <p>.</p> 
+  </footer> 
+  <script>
+      document.addEventListener('DOMContentLoaded', () => { 
+    const ctaButton = document.querySelector('.footer'); 
+    if (ctaButton) { 
+        ctaButton.addEventListener('click', () => { 
+            alert('This point is all alone... OH NO NOW IT\'S NOT ONE!!! NOW THERE ARE FOUR OF THEM!!!'); 
+        }); 
+    } else { 
+        console.error('Element with class "footer" not found'); 
+    } 
+});
+    </script> 
+ </body>
+</html>
